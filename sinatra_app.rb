@@ -13,16 +13,6 @@ set :enable_cache, true
 set :short_ttl, 400
 set :long_ttl, 4600
 
-configure do
-  Compass.configuration do |config|
-    config.project_path = File.dirname(__FILE__)
-    config.sass_dir = 'assets/sass'
-  end
-
-  set :haml, { :format => :html5 }
-  set :sass, Compass.sass_engine_options
-end
-
 get "/js/*.js" do
   require './assets_compiler.rb'
   filename = params[:splat].first
@@ -30,6 +20,15 @@ get "/js/*.js" do
 end
 
 get "/css/*.css" do
+  configure do
+    Compass.configuration do |config|
+      config.project_path = File.dirname(__FILE__)
+      config.sass_dir = 'assets/sass'
+    end
+
+    set :haml, { :format => :html5 }
+    set :sass, Compass.sass_engine_options
+  end
   require './assets_compiler.rb'
   filename = params[:splat].first
   compile_asset_with_cache(filename, "css")
