@@ -1,5 +1,6 @@
 # encoding: UTF-8
-def compile_asset_with_cache(filename, type)
+def compile_asset_with_cache(filename, type, use_cache=true)
+  use_cache = false if params[:use_cache] == "false"
   if type == "javascript"
     set :views, File.dirname(__FILE__) + '/assets/coffee'
     file_modified = File.mtime(File.dirname(__FILE__) + "/assets/coffee/#{filename.to_s}.coffee").to_i
@@ -9,14 +10,16 @@ def compile_asset_with_cache(filename, type)
     file_modified = File.mtime(File.dirname(__FILE__) + "/assets/sass/#{filename.to_s}.sass").to_i
   end
 
-  if(settings.cache.get(filename.to_s) == nil || settings.cache.get("mtime_" << filename.to_s) == nil || settings.cache.get("mtime_" << filename.to_s) < file_modified)
+  #raise "test".inspect
 
+  if(use_cache == false || settings.cache.get(filename.to_s) == nil || settings.cache.get("mtime_" << filename.to_s) == nil || settings.cache.get("mtime_" << filename.to_s) < file_modified)
     build_comp = coffee filename.to_sym if type == "javascript"
     build_comp = sass filename.to_sym if type == "css"
 
-    settings.cache.set(filename.to_s, build_comp.to_s)
-    settings.cache.set("mtime_" << filename.to_s, file_modified)
-
+    unless use_cache == false
+      settings.cache.set(filename.to_s, build_comp.to_s)
+      settings.cache.set("mtime_" << filename.to_s, file_modified)
+    end
   else
     build_comp = settings.cache.get(filename.to_s)
   end

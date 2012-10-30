@@ -1,7 +1,428 @@
+@import "compass/css3/images"
 @import "compass/css3/text-shadow"
+@import "compass/css3/box-shadow"
+@import "compass/css3/opacity"
 
-body
-  font-family: Arial, Verdana, Helvetica, sans-serif
-  background-color: grey
-  color: black
-  @include text-shadow(rgba(white, 0.5) 0 1px 0px)
+$hh-color: #f50
+$button-from: #444
+$button-to: #222
+$component-padding: 0.5em 0.8em 0.5em 0em
+$listitem-border: 1px solid #d9d9d9
+$msgbox-text-shadow: 0px -1px #777
+$footer-background: #eee
+$toolbar-from: #333
+$toolbar-to: #111
+$toolbar-item-color: #edad8e
+$toolbar-item-shadow: -1px -1px #c15419
+$menu-background: #ad3912
+$menuitem-background: #222
+$menuitem-color: #EEE
+$menuitem-header-color: #999
+$menuitem-header-from: #2b2b2b
+$menuitem-header-to: #1a1a1a
+
+$caption-color: #666
+$separator-color: #ddd
+$template-text-size: 75%
+$text-unemphasized-color: #666
+
+// Theme base
+$base-color: #d34515
+$page-bg-color: white
+
+// Buttons
+$button-gradient: "bevel"
+
+// Lists
+$list-bg-color: white
+$list-color: #333333
+$list-pressed-color: #dddddd
+$list-active-gradient: "recessed"
+$list-header-bg-color: #999999
+$list-header-gradient: "bevel"
+
+// Sheets
+$sheet-bg-color: $toolbar-from
+
+
+// base
+a
+  color: $hh-color
+
+ul
+  padding-left: 2.5em
+  li
+    list-style: disc
+
+h1
+  font-size: 2em
+  font-weight: bold
+
+p
+  margin: 1em 0
+
+.list
+  font-size: $template-text-size
+  .listitem
+    list-style-type: circle
+    color: #999
+    font-size: 1.5em
+    &.ad
+      list-style-type: none
+
+.overlay
+  @include opacity(0.91)
+  width: 50%
+  height: 100%
+  left: auto
+  right: 0px
+
+// ads
+#ads
+  display: block
+
+// x-list
+.x-list
+  font-size: $template-text-size
+  .title
+    font-weight: bold
+
+// x-msgbox
+
+div.x-sheet.x-msgbox
+  border-width: 0px
+  .x-msgbox-text
+    color: #fff
+    +text-shadow($msgbox-text-shadow)
+  .x-button
+    border-color: #777
+    +background-image(linear-gradient(color_stops($button-from, $button-to)))
+
+// menu
+.menu.x-panel.x-floating
+  border-radius: 0em
+  padding: 0px
+  -webkit-border-radius: 0em
+  -webkit-box-shadow: none
+  @include box-shadow(#333 0px 0px 7px)
+  .x-panel-body
+    background: $menu-background
+    border-radius: 0em
+    -webkit-border-radius: 0em
+  .startpage
+    border-top: 0px solid #de6840
+    color: $menuitem-color
+    line-height: 1.5em
+    font-size: 0.8em
+    margin: 1px 0
+    font-weight: bold
+    @include text-shadow(rgba(black, 0.2) 1px 1px 1px)
+    padding: 0.7em 0.5em
+    div
+      vertical-align: top
+    img
+      height: 1.4em
+      width: auto
+      margin-right: 0.5em
+    &:active, &.pressed
+      background-color: #cb4518
+
+
+  .x-list
+    background: inherit
+    .x-list-header
+      background-color: #777
+      padding-left: 1em
+      @include background-image(linear-gradient(#ec9e6e, #ff6b29, #e73c01))
+      border: 0
+      line-height: 2em
+      font-size: 1em
+      font-weight: bold
+      font-family: Arial, sans-serif
+      text-transform: uppercase
+      color: #EEE
+      margin-bottom: 1px
+      @include box-shadow(#333 0px 0px 2px)
+      @include text-shadow(#999 0px -1px 0px)
+
+
+      //background: $menu-background
+      //background-image(linear-gradient(color_stops($menuitem-header-from, $menuitem-header-to)))
+      //border: 0
+      //color: $menuitem-header-color
+      text-transform: uppercase
+    .x-list-item
+      border-top: 1px solid #de6840
+      background: $menuitem-background
+      @include background-image(linear-gradient(#b73d14, #c54a1c))
+      color: $menuitem-color
+      line-height: 2em
+      margin: 1px 0
+      font-weight: bold
+      @include box-shadow(#a43c17 0px 0px 1px)
+      @include text-shadow(rgba(black, 0.2) 1px 1px 1px)
+      &:first-child
+        margin-top: 0
+        border-top: 0
+      &:last-child
+        border-bottom: 0
+      &:active, &.pressed
+        @include background-image(linear-gradient(#c54a1c, #b73d14))
+
+// toolbar
+.toolbar
+  padding: 0.1em 0.2em
+  +background-image(linear-gradient(color_stops($toolbar-from, $toolbar-to)))
+  .x-button
+    margin: 0.1em
+  .toolbar_btn
+    padding: 0.3em
+    -webkit-border-radius: 0.2em
+    border-radius: 0.2em
+    @include background-image(linear-gradient(#424242, #2f2e2d, #14130e))
+    margin-right: 3px
+    border: 1px solid #555
+    @include box-shadow(#111 0px 0px 4px inset)
+    img.reload_icon
+      width: 26px
+      height: 26px
+    img.menu_icon
+      position: absolute
+      top: 0px
+      left: 0px
+      height: 1.8em
+      width: 0.4em
+      -webkit-border-top-left-radius: 0.1em
+      -webkit-border-bottom-left-radius: 0.1em
+      -moz-border-radius-topleft: 0.1em
+      -moz-border-radius-bottomleft: 0.1em
+      border-top-left-radius: 0.1em
+      border-bottom-left-radius: 0.1em
+      @include box-shadow(#000 0px 1px 2px)
+    .x-button-label
+      color: #999
+      @include text-shadow(#000 1px 1px 1px)
+  .menu_btn
+    padding-left: 0.5em
+  .reload_btn
+    padding: 0em
+
+
+  &.x-docked-top
+    border: 0
+
+
+
+  .x-button.seamless
+    background: transparent
+    border: 0
+    color: $toolbar-item-color
+    -webkit-box-shadow: none
+    +text-shadow($toolbar-item-shadow)
+    .x-icon-mask
+      background-color: $toolbar-item-color
+      background-image: none
+      margin: 0 0.25em
+
+// indexToolbar
+.stayonsite_box
+  @include background-image(linear-gradient(#222, #333, #000))
+  font-size: $template-text-size
+  overflow: hidden
+  padding: 0 0.5em
+  .x-button
+    margin: 0.5em 0em
+    text-align: center
+    font-weight: bold
+
+.indexToolbar
+  .newsTips
+    @include background-image(linear-gradient(#e76c00, #ee8b01, #f2a103))
+    font-size: $template-text-size
+    overflow: hidden
+    padding: 0 0.5em
+    .x-button
+      margin: 0.5em 0em
+
+  .logo_container
+    padding-top: 0.3em
+
+// footer
+.footer
+  background: $footer-background
+  font-size: $template-text-size
+  line-height: 1.5em
+  padding: 0.5em 0.8em 0.5em 1em
+  .contact
+    margin-right: 1em
+
+.article
+  &:active, &.pressed
+    background-color: #EEE
+
+
+// indexview
+.indexview
+  div.latest_head
+    margin-top: 0.5em
+    background-color: #777
+    padding-left: 1em
+    @include background-image(linear-gradient(#ffaa76, #ff6b29, #e73c01))
+    border-bottom: 1px solid #bf3101
+    @include box-shadow(#777 0px 1px 3px)
+    h2
+      line-height: 2.5em
+      font-size: 1em
+      font-weight: bold
+      font-family: Arial, sans-serif
+      text-transform: uppercase
+      color: #EEE
+      @include text-shadow(#999 0px -1px 0px)
+  ul.featured
+    .article
+      padding-top: 0.5em
+      .title
+        margin-bottom: 0.2em
+        font-weight: bold
+        line-height: 1.2em
+        letter-spacing: -1px
+        font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif
+      &.ad
+        text-align: center
+        border: 0
+        padding-left: 0em
+        padding: 0em
+        .body
+          padding: 0em
+          margin: 0em
+        img
+          float: none
+          margin: 0px
+          padding: 0px
+
+  ul.livefeed
+    .body
+      span.livefeed
+        background-color: #111
+
+  div.livefeed_notice
+    display: none
+    padding: 0.5em
+
+
+  ul.latest
+    .article
+      padding-top: 0.5em
+      padding-bottom: 0.5em
+      font-size: 0.8em
+      font-family: Arial, sans-serif
+      .date
+        padding-top: 0.6em
+        display: block
+
+  .expand
+    text-align: center
+    color: #ff6b29
+    font-size: 0.8em
+    font-weight: bold
+    line-height: 2em
+
+  .article
+    color: #222
+    font-size: 1em
+    margin-left: -2.5em
+    padding-left: 2.5em
+    padding-right: 0.5em
+    border-bottom: $listitem-border
+    .body
+      line-height: 1.2em
+      font-size: 0.8em
+      padding-bottom: 0.5em
+      span.category
+        display: inline-block
+        background-color: #ff6b29
+        padding: 0em 0.2em
+        color: white
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 0.7em
+        margin-right: 0.5em
+        line-height: 1.3em
+        vertical-align: 0.2em
+      span.video
+        margin-right: 0em
+        background-color: #111
+
+    &.pressed
+      background: #eee
+    a
+      color: inherit
+      text-decoration: none
+    img
+      float: right
+      margin: 0.2em
+    .date
+      float: right
+      margin: 0em
+      display: none
+      color: #999
+      font-size: 0.8em
+
+.livefeed
+  div.livefeed_notice
+    display: block
+
+// article show
+.articleView
+  .article
+    font-size: $template-text-size
+    .imagecontainer
+      p
+        color: $caption-color
+        margin: 0 0.8em 0 0.8em
+      .photographer
+        text-align: right
+        margin-top: 0.8em
+    .content
+      padding: 0.8em
+      .date
+        font-weight: bold
+      .preamble
+        border-top: 1px solid $separator-color
+        font-weight: bold
+        margin-top: 1em
+        padding-top: 1em
+      .by
+        border-top: 1px solid $separator-color
+        margin-top: 1em
+        padding-top: 1em
+        text-align: right
+        .name
+          font-weight: bold
+        .phone
+          margin: 0.5em 0
+        .email
+          margin: 0.5em 0
+
+// comment index
+.commentIndex
+  .comment
+    color: #333
+    font-size: 1em
+    margin: 0
+    border-bottom: 1px solid #AAA
+    padding: 1.5em 0.5em
+    .title
+      font-size: 0.8em
+      font-weight: bold
+    .publicationDate
+      color: $text-unemphasized-color
+      font-size: 1em
+      margin-bottom: 0.5em
+
+// .static
+// Views with static HTML
+.x-panel.static
+  font-size: $template-text-size
+  .container
+    padding: 0.8em

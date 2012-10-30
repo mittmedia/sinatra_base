@@ -1,0 +1,547 @@
+/* line 49, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+a {
+  color: #ff5500;
+}
+
+/* line 52, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+ul {
+  padding-left: 2.5em;
+}
+/* line 54, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+ul li {
+  list-style: disc;
+}
+
+/* line 57, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* line 61, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+p {
+  margin: 1em 0;
+}
+
+/* line 64, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.list {
+  font-size: 75%;
+}
+/* line 66, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.list .listitem {
+  list-style-type: circle;
+  color: #999999;
+  font-size: 1.5em;
+}
+/* line 70, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.list .listitem.ad {
+  list-style-type: none;
+}
+
+/* line 73, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.overlay {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=91);
+  opacity: 0.91;
+  width: 50%;
+  height: 100%;
+  left: auto;
+  right: 0px;
+}
+
+/* line 81, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+#ads {
+  display: block;
+}
+
+/* line 85, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.x-list {
+  font-size: 75%;
+}
+/* line 87, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.x-list .title {
+  font-weight: bold;
+}
+
+/* line 92, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+div.x-sheet.x-msgbox {
+  border-width: 0px;
+}
+/* line 94, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+div.x-sheet.x-msgbox .x-msgbox-text {
+  color: white;
+  text-shadow: 0px -1px #777777;
+}
+/* line 97, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+div.x-sheet.x-msgbox .x-button {
+  border-color: #777777;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #222222));
+  background-image: -webkit-linear-gradient(#444444, #222222);
+  background-image: -moz-linear-gradient(#444444, #222222);
+  background-image: -o-linear-gradient(#444444, #222222);
+  background-image: linear-gradient(#444444, #222222);
+}
+
+/* line 102, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating {
+  border-radius: 0em;
+  padding: 0px;
+  -webkit-border-radius: 0em;
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: #333333 0px 0px 7px;
+  -moz-box-shadow: #333333 0px 0px 7px;
+  box-shadow: #333333 0px 0px 7px;
+}
+/* line 108, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .x-panel-body {
+  background: #ad3912;
+  border-radius: 0em;
+  -webkit-border-radius: 0em;
+}
+/* line 112, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .startpage {
+  border-top: 0px solid #de6840;
+  color: #eeeeee;
+  line-height: 1.5em;
+  font-size: 0.8em;
+  margin: 1px 0;
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;
+  padding: 0.7em 0.5em;
+}
+/* line 121, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .startpage div {
+  vertical-align: top;
+}
+/* line 123, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .startpage img {
+  height: 1.4em;
+  width: auto;
+  margin-right: 0.5em;
+}
+/* line 127, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .startpage:active, .menu.x-panel.x-floating .startpage.pressed {
+  background-color: #cb4518;
+}
+/* line 131, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .x-list {
+  background: inherit;
+}
+/* line 133, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .x-list .x-list-header {
+  background-color: #777777;
+  padding-left: 1em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec9e6e), color-stop(50%, #ff6b29), color-stop(100%, #e73c01));
+  background-image: -webkit-linear-gradient(#ec9e6e, #ff6b29, #e73c01);
+  background-image: -moz-linear-gradient(#ec9e6e, #ff6b29, #e73c01);
+  background-image: -o-linear-gradient(#ec9e6e, #ff6b29, #e73c01);
+  background-image: linear-gradient(#ec9e6e, #ff6b29, #e73c01);
+  border: 0;
+  line-height: 2em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #eeeeee;
+  margin-bottom: 1px;
+  -webkit-box-shadow: #333333 0px 0px 2px;
+  -moz-box-shadow: #333333 0px 0px 2px;
+  box-shadow: #333333 0px 0px 2px;
+  text-shadow: #999999 0px -1px 0px;
+  text-transform: uppercase;
+}
+/* line 154, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .x-list .x-list-item {
+  border-top: 1px solid #de6840;
+  background: #222222;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b73d14), color-stop(100%, #c54a1c));
+  background-image: -webkit-linear-gradient(#b73d14, #c54a1c);
+  background-image: -moz-linear-gradient(#b73d14, #c54a1c);
+  background-image: -o-linear-gradient(#b73d14, #c54a1c);
+  background-image: linear-gradient(#b73d14, #c54a1c);
+  color: #eeeeee;
+  line-height: 2em;
+  margin: 1px 0;
+  font-weight: bold;
+  -webkit-box-shadow: #a43c17 0px 0px 1px;
+  -moz-box-shadow: #a43c17 0px 0px 1px;
+  box-shadow: #a43c17 0px 0px 1px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;
+}
+/* line 164, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .x-list .x-list-item:first-child {
+  margin-top: 0;
+  border-top: 0;
+}
+/* line 167, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .x-list .x-list-item:last-child {
+  border-bottom: 0;
+}
+/* line 169, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.menu.x-panel.x-floating .x-list .x-list-item:active, .menu.x-panel.x-floating .x-list .x-list-item.pressed {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c54a1c), color-stop(100%, #b73d14));
+  background-image: -webkit-linear-gradient(#c54a1c, #b73d14);
+  background-image: -moz-linear-gradient(#c54a1c, #b73d14);
+  background-image: -o-linear-gradient(#c54a1c, #b73d14);
+  background-image: linear-gradient(#c54a1c, #b73d14);
+}
+
+/* line 173, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar {
+  padding: 0.1em 0.2em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #111111));
+  background-image: -webkit-linear-gradient(#333333, #111111);
+  background-image: -moz-linear-gradient(#333333, #111111);
+  background-image: -o-linear-gradient(#333333, #111111);
+  background-image: linear-gradient(#333333, #111111);
+}
+/* line 176, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .x-button {
+  margin: 0.1em;
+}
+/* line 178, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .toolbar_btn {
+  padding: 0.3em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #424242), color-stop(50%, #2f2e2d), color-stop(100%, #14130e));
+  background-image: -webkit-linear-gradient(#424242, #2f2e2d, #14130e);
+  background-image: -moz-linear-gradient(#424242, #2f2e2d, #14130e);
+  background-image: -o-linear-gradient(#424242, #2f2e2d, #14130e);
+  background-image: linear-gradient(#424242, #2f2e2d, #14130e);
+  margin-right: 3px;
+  border: 1px solid #555555;
+  -webkit-box-shadow: #111111 0px 0px 4px inset;
+  -moz-box-shadow: #111111 0px 0px 4px inset;
+  box-shadow: #111111 0px 0px 4px inset;
+}
+/* line 186, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .toolbar_btn img.reload_icon {
+  width: 26px;
+  height: 26px;
+}
+/* line 189, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .toolbar_btn img.menu_icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 1.8em;
+  width: 0.4em;
+  -webkit-border-top-left-radius: 0.1em;
+  -webkit-border-bottom-left-radius: 0.1em;
+  -moz-border-radius-topleft: 0.1em;
+  -moz-border-radius-bottomleft: 0.1em;
+  border-top-left-radius: 0.1em;
+  border-bottom-left-radius: 0.1em;
+  -webkit-box-shadow: black 0px 1px 2px;
+  -moz-box-shadow: black 0px 1px 2px;
+  box-shadow: black 0px 1px 2px;
+}
+/* line 202, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .toolbar_btn .x-button-label {
+  color: #999999;
+  text-shadow: black 1px 1px 1px;
+}
+/* line 205, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .menu_btn {
+  padding-left: 0.5em;
+}
+/* line 207, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .reload_btn {
+  padding: 0em;
+}
+/* line 211, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar.x-docked-top {
+  border: 0;
+}
+/* line 216, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .x-button.seamless {
+  background: transparent;
+  border: 0;
+  color: #edad8e;
+  -webkit-box-shadow: none;
+  text-shadow: -1px -1px #c15419;
+}
+/* line 222, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.toolbar .x-button.seamless .x-icon-mask {
+  background-color: #edad8e;
+  background-image: none;
+  margin: 0 0.25em;
+}
+
+/* line 228, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.stayonsite_box {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(50%, #333333), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#222222, #333333, #000000);
+  background-image: -moz-linear-gradient(#222222, #333333, #000000);
+  background-image: -o-linear-gradient(#222222, #333333, #000000);
+  background-image: linear-gradient(#222222, #333333, #000000);
+  font-size: 75%;
+  overflow: hidden;
+  padding: 0 0.5em;
+}
+/* line 233, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.stayonsite_box .x-button {
+  margin: 0.5em 0em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 239, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexToolbar .newsTips {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e76c00), color-stop(50%, #ee8b01), color-stop(100%, #f2a103));
+  background-image: -webkit-linear-gradient(#e76c00, #ee8b01, #f2a103);
+  background-image: -moz-linear-gradient(#e76c00, #ee8b01, #f2a103);
+  background-image: -o-linear-gradient(#e76c00, #ee8b01, #f2a103);
+  background-image: linear-gradient(#e76c00, #ee8b01, #f2a103);
+  font-size: 75%;
+  overflow: hidden;
+  padding: 0 0.5em;
+}
+/* line 244, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexToolbar .newsTips .x-button {
+  margin: 0.5em 0em;
+}
+/* line 247, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexToolbar .logo_container {
+  padding-top: 0.3em;
+}
+
+/* line 251, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.footer {
+  background: #eeeeee;
+  font-size: 75%;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em 0.5em 1em;
+}
+/* line 256, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.footer .contact {
+  margin-right: 1em;
+}
+
+/* line 260, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.article:active, .article.pressed {
+  background-color: #eeeeee;
+}
+
+/* line 266, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview div.latest_head {
+  margin-top: 0.5em;
+  background-color: #777777;
+  padding-left: 1em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffaa76), color-stop(50%, #ff6b29), color-stop(100%, #e73c01));
+  background-image: -webkit-linear-gradient(#ffaa76, #ff6b29, #e73c01);
+  background-image: -moz-linear-gradient(#ffaa76, #ff6b29, #e73c01);
+  background-image: -o-linear-gradient(#ffaa76, #ff6b29, #e73c01);
+  background-image: linear-gradient(#ffaa76, #ff6b29, #e73c01);
+  border-bottom: 1px solid #bf3101;
+  -webkit-box-shadow: #777777 0px 1px 3px;
+  -moz-box-shadow: #777777 0px 1px 3px;
+  box-shadow: #777777 0px 1px 3px;
+}
+/* line 273, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview div.latest_head h2 {
+  line-height: 2.5em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #eeeeee;
+  text-shadow: #999999 0px -1px 0px;
+}
+/* line 282, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.featured .article {
+  padding-top: 0.5em;
+}
+/* line 284, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.featured .article .title {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+/* line 290, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.featured .article.ad {
+  text-align: center;
+  border: 0;
+  padding-left: 0em;
+  padding: 0em;
+}
+/* line 295, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.featured .article.ad .body {
+  padding: 0em;
+  margin: 0em;
+}
+/* line 298, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.featured .article.ad img {
+  float: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 305, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.livefeed .body span.livefeed {
+  background-color: #111111;
+}
+/* line 308, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview div.livefeed_notice {
+  display: none;
+  padding: 0.5em;
+}
+/* line 314, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.latest .article {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 0.8em;
+  font-family: Arial, sans-serif;
+}
+/* line 319, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview ul.latest .article .date {
+  padding-top: 0.6em;
+  display: block;
+}
+/* line 323, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .expand {
+  text-align: center;
+  color: #ff6b29;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 2em;
+}
+/* line 330, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article {
+  color: #222222;
+  font-size: 1em;
+  margin-left: -2.5em;
+  padding-left: 2.5em;
+  padding-right: 0.5em;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 337, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article .body {
+  line-height: 1.2em;
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+}
+/* line 341, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article .body span.category {
+  display: inline-block;
+  background-color: #ff6b29;
+  padding: 0em 0.2em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7em;
+  margin-right: 0.5em;
+  line-height: 1.3em;
+  vertical-align: 0.2em;
+}
+/* line 352, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article .body span.video {
+  margin-right: 0em;
+  background-color: #111111;
+}
+/* line 356, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article.pressed {
+  background: #eeeeee;
+}
+/* line 358, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 361, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article img {
+  float: right;
+  margin: 0.2em;
+}
+/* line 364, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.indexview .article .date {
+  float: right;
+  margin: 0em;
+  display: none;
+  color: #999999;
+  font-size: 0.8em;
+}
+
+/* line 372, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.livefeed div.livefeed_notice {
+  display: block;
+}
+
+/* line 377, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article {
+  font-size: 75%;
+}
+/* line 380, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .imagecontainer p {
+  color: #666666;
+  margin: 0 0.8em 0 0.8em;
+}
+/* line 383, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .imagecontainer .photographer {
+  text-align: right;
+  margin-top: 0.8em;
+}
+/* line 386, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .content {
+  padding: 0.8em;
+}
+/* line 388, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .content .date {
+  font-weight: bold;
+}
+/* line 390, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .content .preamble {
+  border-top: 1px solid #dddddd;
+  font-weight: bold;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+/* line 395, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .content .by {
+  border-top: 1px solid #dddddd;
+  margin-top: 1em;
+  padding-top: 1em;
+  text-align: right;
+}
+/* line 400, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .content .by .name {
+  font-weight: bold;
+}
+/* line 402, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .content .by .phone {
+  margin: 0.5em 0;
+}
+/* line 404, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.articleView .article .content .by .email {
+  margin: 0.5em 0;
+}
+
+/* line 409, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.commentIndex .comment {
+  color: #333333;
+  font-size: 1em;
+  margin: 0;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 1.5em 0.5em;
+}
+/* line 415, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.commentIndex .comment .title {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+/* line 418, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.commentIndex .comment .publicationDate {
+  color: #666666;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* line 425, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.x-panel.static {
+  font-size: 75%;
+}
+/* line 427, /Users/magnusengstrom/code/sinatra_base/assets/sass/application.sass */
+.x-panel.static .container {
+  padding: 0.8em;
+}

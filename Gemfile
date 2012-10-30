@@ -7,3 +7,4 @@ gem 'compass'
 gem 'haml'
 gem 'coffee-script'
 gem 'dalli'
+gem "rack-cache"
